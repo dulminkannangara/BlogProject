@@ -1,0 +1,56 @@
+:host{
+    margin-top: 0;
+    display: block;
+}
+.title{
+    font-weight: 500;
+    font-size: 140%;
+    height: 50px;
+}
+.content{
+    
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.date{
+    margin-top: 9px;
+    margin-right: 50px;
+    
+}
+mat-expansion-panel{
+    margin-top: 5px;
+}
+.noPost{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.post_txt{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 150%;
+    color: #5cbdb9;
+}
+.editTitle{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+
+button{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    margin-right: 10px;
+    width: 130px;
+
+}

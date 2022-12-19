@@ -1,0 +1,16 @@
+CREATE DATABASE blogDB;
+USE blogDB;
+
+CREATE TABLE blogs (
+  id integer PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(255) NOT NULL,
+  contents TEXT NOT NULL,
+  date_Time dateTime NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE admin (
+  id integer PRIMARY KEY AUTO_INCREMENT,
+  admin_name VARCHAR(50) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  password VARCHAR(100) NOT NULL
+);

@@ -1,0 +1,14 @@
+<mat-sidenav-container class="container">
+<mat-card>
+    <form (submit)="onPostAdded(postForm)" #postForm="ngForm">
+        <mat-form-field>
+            <input type="text" matInput ngModel required name="title" placeholder="Post Title" #title="ngModel">
+        </mat-form-field>
+        <mat-form-field>
+            <textarea rows="10" matInput ngModel required name="content" placeholder="Post Content" #content="ngModel"></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="accent" type="submit">Save Post</button>
+    </form>
+</mat-card>
+<app-post-list></app-post-list>
+</mat-sidenav-container>

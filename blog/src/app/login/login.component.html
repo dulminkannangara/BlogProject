@@ -1,0 +1,15 @@
+
+<mat-sidenav-container class="container">
+    <mat-sidenav-content>
+        <div class="content">
+            <button class="menu-button" [routerLink]="['/admin']">
+                <mat-icon>settings</mat-icon>
+                <span>Login</span>
+            </button>
+            <div class="main">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

@@ -1,0 +1,24 @@
+<h1 class="post_txt">Log Posts</h1>
+<mat-accordion multi="true" *ngIf="posts.length > 0"> <!-- multi="true" useing this we can expand all posts same time-->
+    <mat-expansion-panel *ngFor="let post of posts"> <!-- Here 'post' is nariable name, let post = posts;  This 'posts' variable valie getting from .ts file class variable-->
+        <mat-expansion-panel-header class="title">
+            {{post.title}}
+        </mat-expansion-panel-header>
+
+
+        <form (submit)="updatePost(postForm,post)" #postForm="ngForm" >
+            <input type="text" class ="editTitle" matInput ngModel required name="title" placeholder="Post Title" #title="ngModel" [(ngModel)]="post.title">
+            <textarea rows="10" class="content" matInput ngModel required name="content" placeholder="Post Content" #content="ngModel"  [(ngModel)]="post.content"></textarea>
+            <button mat-button color="primary" type="submit">Edit Post</button>
+        
+        </form>
+        
+            
+        <mat-action-row>
+            <p class="date">{{post.date_Time | date: 'MMM d,y, h:mm:ss a'}}</p>
+            <button mat-button color="warn" (click)="deletePost(post)">Delete Post</button>
+        </mat-action-row>
+    </mat-expansion-panel>
+</mat-accordion>
+<p *ngIf="posts.length == 0" class="noPost">No Posts Available!</p>
+

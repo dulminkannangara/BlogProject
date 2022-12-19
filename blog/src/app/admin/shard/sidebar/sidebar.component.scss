@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+button{
+    background: transparent;
+    border: none;
+}
+*{
+    font-family: 'Andika',sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.top{
+    margin-top: 15px;
+    padding: 5px;
+    margin-left: 80%;
+    font-size: 30px;
+}
+mat-icon{
+ color:#5cbdb9;  
+ font-family: 'Material Icons'; 
+ vertical-align: middle;
+}
+.user{
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 50px;
+    img{
+        margin-top: 16px;
+        width: 120px;
+        height: 120px;
+    }
+    .name{
+        color: #000;
+    }
+    .mail{
+        margin-top: -10px;
+        color: #6B7A8F;
+    }
+}
+.menu-head{
+
+    color: #2d545e;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.menu-item{
+    margin: 0 10px 0 10px;
+    background: #ebf6f5;
+    .menu-button{
+        padding: 5px;
+        display: block;
+        width: 100%;
+        position: relative;
+        display: flex;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        
+    }
+    .menu-button span{
+        margin-left: 15px;
+        padding-top: 5px;
+        color:  #2d545e;
+    }
+
+}
+.menu-button:hover{
+    background: #5cbdb9;
+    span{
+        color: white;
+    }
+    mat-icon{
+        color: white;
+    }
+    cursor: pointer;
+}
+.menu-button:focus{
+    background: #5cbdb9;
+    span{
+        color: white;
+    }
+    mat-icon{
+        color: white;
+    }
+}
